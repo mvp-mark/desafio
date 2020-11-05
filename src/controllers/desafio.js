@@ -10,7 +10,7 @@ const templateTest = fs.readFileSync("template.html", {
   encoding: "utf-8",
 });
 
-let path = `${process.env.HOST}:${process.env.PORT}/template.html`;
+let path = `${process.env.HOST}/template.html`;
 console.log(path);
 module.exports = {
   async index(req, res) {
