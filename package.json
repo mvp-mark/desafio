@@ -1,0 +1,21 @@
+{
+  "name": "desafio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": " node-dev .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "fs": "^0.0.1-security",
+    "handlebars": "^4.7.6",
+    "html-pdf": "^2.2.0",
+    "node-dev": "^6.2.0",
+    "node-fetch": "^2.6.1",
+    "puppeteer": "^5.4.1"
+  }
+}
