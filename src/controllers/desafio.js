@@ -1,5 +1,7 @@
 const fs = require("fs");
 const pdfHtml = require("html-pdf");
+require("dotenv").config();
+
 // const puppeteer = require("puppeteer");
 const fetch = require("node-fetch");
 const Handlebars = require("handlebars");
@@ -8,8 +10,8 @@ const templateTest = fs.readFileSync("template.html", {
   encoding: "utf-8",
 });
 
-let path = "http://localhost:3333/template.html";
-
+let path = `${process.env.HOST}:${process.env.PORT}/template.html`;
+console.log(path);
 module.exports = {
   async index(req, res) {
     res.header("content-type", "text/html");
